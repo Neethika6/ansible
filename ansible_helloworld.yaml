@@ -1,0 +1,7 @@
+-name:Hello world
+  hosts:local
+  connection:local
+  tasks:
+    -name:Print Hello world
+    ansible.buitlin.debug:
+      msg:"Hello world..This is my first ansible playbook"

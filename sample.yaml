@@ -1,0 +1,12 @@
+-firstname:neethika
+  lastname:shynu
+  dob:06-04-1998
+  address:
+  -type:permanent
+    dno:flatno302
+    street:5thlane
+    city:Guntur
+  -type:current
+    "dno":"Flatno:302",
+    "street":"5thlane",
+    "city":"Guntur"

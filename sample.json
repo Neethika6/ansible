@@ -1,0 +1,21 @@
+{
+    "Firstname":"Neethika",
+    "Lastname":"shynu",
+    "DOB":"06-04-1998",
+    "Address":[
+        {
+            "type":"permanent",
+            "dno":"Flatno:302",
+            "street":"5thlane",
+            "city":"Guntur"
+        },
+        {
+            "type":"current",
+            "dno":"Flatno:302",
+            "street":"5thlane",
+            "city":"Guntur"
+        }
+        
+    ]
+
+}

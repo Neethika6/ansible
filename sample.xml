@@ -1,0 +1,15 @@
+<Firstname>Neethika</Firstname>
+<Lastname>Shynu</Lastname>
+<DOB>06-04-1998</DOB>
+<Address>
+    <permanent>
+        <DNO>Flatno:302</DNO>
+        <Street>5thlane</Street>
+        <city>Guntur</Guntur>
+    </permanent>
+    <current>
+        <DNO>Flatno:302</DNO>
+        <Street>5thlane</Street>
+        <city>Guntur</Guntur>
+    </current>
+</Address>

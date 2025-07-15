@@ -1,0 +1,16 @@
+- name: Task Level variables
+  hosts: local
+  connection: local
+  vars:
+    COURSE: DevOps with AWS
+    DURATION: 30 HRS
+    LEARNER: neethika
+  taks:
+    - name: Task level variables Check
+      vars:
+        LEARNER: shynu
+      ansible.builtin.debug:
+        msg: "The course name is {{ COURSE }} and the duration of the course is {{ DURATION }} and the Learner is {{ LEARNER }}"
+    - name: This should print the Play level variables
+      ansible.builtin.debug:
+        msg: "The course name is {{ COURSE }} and the duration of the course is {{ DURATION }} and the Learner is {{ LEARNER }}"

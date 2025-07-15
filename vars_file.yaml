@@ -3,7 +3,7 @@
   connection: local
   vars_files:
     - course.yaml
-  taks:
+  tasks:
     - name: Print course information
       ansible.builtin.debug:
         msg: "The name of the course is {{ COURSE }} and the duration is {{ DURATION }} and the learner is {{ LEARNER }}"

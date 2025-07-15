@@ -1,0 +1,7 @@
+- name: Ping the server
+  hosts: frontend
+  tasks:
+  - name: Ping the server
+    ansible.builtin.ping:
+    ansible.builtin.debug:
+      msg: "Ping is successful"

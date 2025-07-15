@@ -8,7 +8,7 @@
 
   - name: This is Task2
     ansible.builtin.debug:
-      msg: ="This is Task2 from Play1"
+      msg: "This is Task2 from Play1"
 
 - name: play2
   hosts: local

@@ -5,7 +5,7 @@
     COURSE: DevOps with AWS
     DURATION: 30 HRS
     LEARNER: neethika
-  taks:
+  tasks:
     - name: Task level variables Check
       vars:
         LEARNER: shynu

@@ -1,8 +1,10 @@
 - name: Installing nginx
   hosts: frontend
-  become: tue
+  become: true
   tasks:
   - name: Install nginx
     ansible.builtin.package:
       name: nginx
       state: present
+
+

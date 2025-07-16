@@ -6,8 +6,8 @@
   vars_prompt:
     - name: WELCOME_MESSAGE
       prompt: Please enter welcome WELCOME_MESSAGE
-  vars_files:
-    - course.yaml
+  #vars_files: --> 3rd pref
+  #  - course.yaml
   tasks:
     - name: Varaible preference test
       #vars: --> 2nd preference

@@ -1,0 +1,18 @@
+- name: Datatypes
+  hosts: local
+  conenction: local
+  vars:
+    DURATION: 120 #INT
+    COURSE: "DEvOps" #String
+    IS_LIVE: true #boolean
+    TOOLS:  #LIST[]
+      - Linux
+      - shell
+      - ansible
+    CONCEPTS: #DICTIONARY(key value pairs) 
+      CI:Jenkins
+      SCRIPTING:"SHELL,ANSIBLE,PYTHON"
+  tasks:
+    - name: Display values
+      ansible.builtin.debug:
+        msg: "NUMBER: {{ DURATION}}, STRING: {{ COURSE }}, BOOLEAN: {{ IS_LIVE }}, LIST: {{ TOOLS }}, DICTIONARY: {{ CONCEPTS }}"

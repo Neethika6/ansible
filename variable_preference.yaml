@@ -10,7 +10,7 @@
     - course.yaml
   tasks:
     - name: Varaible preference test
-      vars:
-        WELCOME_MESSAGE: "HOLA!!WELCOME TO TAKS/LOCAL VARIABLE"
+      #vars: --> 2nd preference
+      #  WELCOME_MESSAGE: "HOLA!!WELCOME TO TAKS/LOCAL VARIABLE"
       ansible.builtin.debug:
         msg: "{{ WELCOME_MESSAGE }}"

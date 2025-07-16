@@ -1,8 +1,8 @@
 - name: Varaiables that is mentioned in the play
   hosts: local
   connection: local
-  vars:
-    WELCOME_MESSAGE: "HOLA!!WELCOME TO PLAY/GLOBAL VARIABLE"
+  #vars: --> 5th pref
+  #  WELCOME_MESSAGE: "HOLA!!WELCOME TO PLAY/GLOBAL VARIABLE"
   #vars_prompt: -->4th pref
   #  - name: WELCOME_MESSAGE
   #    prompt: Please enter welcome WELCOME_MESSAGE

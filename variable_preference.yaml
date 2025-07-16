@@ -2,62 +2,15 @@
   hosts: local
   connection: local
   vars:
-    WELCOME_MESSAGE: "Hola!! Welcome to Neethika's WORLD!!! This is play level varaiable"
-  tasks:
-    - name: Using the Varaibales that is mentioned in the tasks(Local Varaibles)
-      vars:
-        WELCOME_MESSAGE: "Hola!! Welcome to Neethika's WORLD!!! This is task level varaiable"
-      ansible.builtin.debug:
-        msg: "{{ WELCOME_MESSAGE }}"
-
-
-    - name: Using variables that is mentioned in the play(Global variables)
-      ansible.builtin.debug:
-        msg: "{{ WELCOME_MESSAGE }}"
-
-    
-
-- name: Variable that has been declared in a file
-  hosts: local
-  connection: local
-  vars_files:
-    - common.yaml
-  tasks:
-    - name: Varaiable from a file
-      ansible.builtin.debug:
-        msg: "{{ WELCOME_MESSAGE }}"
-
-- name: Variable from a prompt
-  hosts: local
-  connection: local
+    WELCOME_MESSAGE: "HOLA!!WELCOME TO PLAY/GLOBAL VARIABLE"
   vars_prompt:
     - name: WELCOME_MESSAGE
-      prompt: Please Enter the WELCOME WELCOME_MESSAGE
+      prompt: Please enter welcome WELCOME_MESSAGE
+  vars_files:
+    - course.yaml
   tasks:
-    - name: Variable from prompt
+    - name: Varaible preference test
+      vars:
+        WELCOME_MESSAGE: "HOLA!!WELCOME TO TAKS/LOCAL VARIABLE"
       ansible.builtin.debug:
         msg: "{{ WELCOME_MESSAGE }}"
-
-- name: Varaiables from local
-  hosts: local
-  connection: local
-  tasks:
-    - name: Variables from local
-      ansible.builtin.debug:
-        msg: "{{ WELCOME_MESSAGE }}"
-
-- name: Variables from Group
-  hosts: frontend
-  tasks:
-    - name: Variables from GROUP
-      ansible.builtin.debug:
-        msg: "{{ WELCOME_MESSAGE }}"
-
-- name: Varaibles from args
-  hosts: local
-  connection: local
-  tasks:
-    - name: Variables from args
-      ansible.builtin.debug:
-        msg: "{{ WELCOME_MESSAGE }}"
-

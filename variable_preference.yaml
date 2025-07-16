@@ -3,9 +3,9 @@
   connection: local
   vars:
     WELCOME_MESSAGE: "HOLA!!WELCOME TO PLAY/GLOBAL VARIABLE"
-  vars_prompt:
-    - name: WELCOME_MESSAGE
-      prompt: Please enter welcome WELCOME_MESSAGE
+  #vars_prompt: -->4th pref
+  #  - name: WELCOME_MESSAGE
+  #    prompt: Please enter welcome WELCOME_MESSAGE
   #vars_files: --> 3rd pref
   #  - course.yaml
   tasks:

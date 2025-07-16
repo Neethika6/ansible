@@ -1,0 +1,7 @@
+- name: Variable in frontend of inventory Installing
+  hosts: frontend
+  tasks:
+    - name: Using valarible from inventory
+      ansible.builtin.debug:
+        msg: "Course is: {{ COURSE }}, Duration of the course is:{{ DURATION }} and the Learner is: {{ LEARNER }}"
+        

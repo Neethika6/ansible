@@ -4,14 +4,18 @@
   vars:
     WELCOME_MESSAGE: "Hola!! Welcome to Neethika's WORLD!!! This is play level varaiable"
   tasks:
-    - name: Using variables that is mentioned in the play(Global variables)
-      ansible.builtin.debug:
-        msg: "{{ WELCOME_MESSAGE }}"
     - name: Using the Varaibales that is mentioned in the tasks(Local Varaibles)
       vars:
         WELCOME_MESSAGE: "Hola!! Welcome to Neethika's WORLD!!! This is task level varaiable"
         ansible.builtin.debug:
           msg: "{{ WELCOME_MESSAGE }}"
+
+          
+    - name: Using variables that is mentioned in the play(Global variables)
+      ansible.builtin.debug:
+        msg: "{{ WELCOME_MESSAGE }}"
+
+    
 
 - name: Variable that has been declared in a file
   hosts: local

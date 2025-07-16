@@ -1,6 +1,6 @@
 - name: Datatypes
   hosts: local
-  conenction: local
+  connection: local
   vars:
     DURATION: 120 #INT
     COURSE: "DEvOps" #String

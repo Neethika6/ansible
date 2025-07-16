@@ -3,7 +3,7 @@
   connection: local
   vars:
     WELCOME_MESSAGE: "Hola!! Welcome to Neethika's WORLD!!! This is play level varaiable"
-  taksks:
+  tasks:
     - name: Using variables that is mentioned in the play(Global variables)
       ansible.builtin.debug:
         msg: "{{ WELCOME_MESSAGE }}"

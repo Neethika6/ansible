@@ -4,9 +4,8 @@
   vars:
     Number: 5
   tasks:
-    #when: Number < 10
     - name: print if the number is less than 10
       when: Number < 10
       ansible.builtin.debug:
         msg: "{{ Number }} is less than 10"
-      
+      #when: Number < 10 --> we can either keep the condition her or at line 8

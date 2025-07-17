@@ -1,3 +1,4 @@
-firstname: Neethika
-lastname: Shynu
-dob: 6April1998
+user:
+  - Neethika
+  - Shynu
+  - Kushi

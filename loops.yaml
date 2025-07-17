@@ -18,7 +18,8 @@
         msg: "{{ item.firstname }}, {{ item.lastname }}, {{ item.DOB }}"
 
     - name: loops by ref the file 
-      loop:
+      vars_file:
         - loop_vars.yaml
       ansible.builtin.debug:
-        msg: "{{ item.firstname }}, {{ item.lastname }}, {{ item.dob }}"
+        msg: "{{ item }}"
+      loop: "{{ user }}"

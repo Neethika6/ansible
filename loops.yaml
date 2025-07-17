@@ -16,3 +16,9 @@
       - { firstname: 'kushi', lastname: 'pranavi', DOB: '28-02-2024'}
       ansible.builtin.debug:
         msg: "{{ item.firstname }}, {{ item.lastname }}, {{ item.DOB }}"
+
+    - name: loops by ref the file 
+      loop:
+        - loop_vars.yaml
+      ansible.builtin.debug:
+        msg: "{{ item.firstname }}, {{ item.lastname }}, {{ item.dob }}"

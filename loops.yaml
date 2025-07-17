@@ -1,6 +1,8 @@
 - name: loops in ansible
   hosts: local
   connection: local
+  vars_file:
+    - loop_vars.yaml
   tasks:
     - name: loops in ansible
       loop:
@@ -18,8 +20,6 @@
         msg: "{{ item.firstname }}, {{ item.lastname }}, {{ item.DOB }}"
 
     - name: loops by ref the file 
-      vars_file:
-        - loop_vars.yaml
       ansible.builtin.debug:
         msg: "{{ item }}"
       loop: "{{ user }}"

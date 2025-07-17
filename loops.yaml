@@ -9,3 +9,10 @@
         - Kushi
       ansible.builtin.debug:
         msg: "{{ item }}"
+
+    - name: loops with key value pairs
+      loop:
+      - { firstname: 'Neethika', lastname: 'Shynu', DOB: '06-04-1998'}
+      - { firstname: 'kushi', lastname: 'pranavi', DOB: '28-02-2024'}
+      ansible.builtin.debug:
+        msg: "{{ item.firstname }}, {{ item.lastname }}, {{ item.DOB }}"
